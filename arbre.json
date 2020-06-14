@@ -1,9 +1,0 @@
-{"nodeid": 0, "depth": 0, "name": "age", "split_condition": 38.5, "yes": 1, "no": 2, "missing": 1, "gain": 0.144052744, "cover": 1103.97229, "children": [
-	{"nodeid": 1, "depth": 1, "name": "age", "split_condition": 35.5, "yes": 3, "no": 4, "missing": 3, "gain": 0.34234187, "cover": 1099.58679, "children": [
-		{"nodeid": 3, "depth": 2, "name": "age", "split_condition": 34.5, "yes": 7, "no": 8, "missing": 7, "gain": 0.294031829, "cover": 1092.96021, "children": [
-			{"nodeid": 7, "name":"leafx", "leaf": -0.000118573043, "cover": 1085.80225}, {"nodeid": 8, "name":"leafx", "leaf": 0.0189373139, "cover": 7.15800381}]}, 
-		{"nodeid": 4, "depth": 2, "name": "age_o", "split_condition": 25.5, "yes": 9, "no": 10, "missing": 9, "gain": 1.35473084, "cover": 6.62652445, "children": [
-			{"nodeid": 9, "name":"leafx", "leaf": -0.0745671615, "cover": 1.94881475}, 
-			{"nodeid": 10, "name":"leafx", "leaf": 0.0102010611, "cover": 4.67770958}]}]}, 
-	{"nodeid": 2, "depth": 1, "name": "samerace", "split_condition": 1, "yes": 5, "no": 6, "missing": 5, "gain": 0.398609072, "cover": 4.38550806, "children": [
-		{"nodeid": 5,"name":"leafx", "leaf": -0.0132991271, "cover": 2.02964449}, {"nodeid": 6, "name":"leafx", "leaf": 0.0381180905, "cover": 2.35586357}]}]}

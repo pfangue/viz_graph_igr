@@ -1,85 +1,63 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/d3/d3.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
-
-<style>
-
-.node {
-  cursor: pointer;
-}
-
-.node circle {
-  fill: #fff;
-  stroke: steelblue;
-  stroke-width: 1.5px;
-}
-
-.node text {
-  font: 10px sans-serif;
-}
-
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-
-</style>
+	<title>Histogramme race</title>
+</head>
 <body>
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="https://d3js.org/d3.v3.min.js"></script>
-  <script src="dt_tree.js"></script>
+	
+	<!--<div id="histo_race", class="plot">
+            <script type="text/javascript" src="js/histo.js"></script>
+    </div> 
+    <br> -->
+
+	<button id="1" onclick="update1(data1)">Men</button>
+	<button id="2" onclick="update1(data2)">Women</button>
+    <div id="bar_race", class="plot">
+            <script type="text/javascript" src="js/bar_race.js"></script>
+    </div> 
+    <br>
+
+    <!--
+    <button id="3" onclick="update2(data3)">Men</button>
+    <button id="4" onclick="update2(data4)">Women</button>
+    <div id="bar_age", class="plot">
+            <script type="text/javascript" src="js/bar_age.js"></script>
+    </div> 
+    <br> -->
+    <div id="bar_pro", class="plot">
+        <script type="text/javascript" src="js/bar_pro.js"></script>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <button id="5" onclick="update3(data5)">Men</button>
+    <button id="6" onclick="update3(data6)">Women</button>
+    <div id="pie_motif", class="plot", position="absolute", top="50px", right="50px">
+            <script type="text/javascript" src="js/pie_motif.js"></script>
+    </div>
+    <br>
+    <br>
+
+    <div id="bar_match", class="plot">
+            <script type="text/javascript" src="js/bar_match.js"></script>
+    </div>
+    <br>
+    <br>
+    
+
+    <div id="histo_dyna", class="plot">
+        <script type="text/javascript" src="js/histo_dynamique.js"></script>
+    </div>
+
+    <p>
+	  <label>Choose race</label>
+	  <input type="number" min="1" max="6" step="1" value="2" id="nBin">
+	</p>
+	
 </body>
-
-
-<!--
-<style type="text/css">
-  
-	.node {
-    cursor: pointer;
-  }
-
-  .overlay{
-      background-color:#EEE;
-  }
-   
-  .node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-  }
-   
-  .node text {
-    font-size:10px; 
-    font-family:sans-serif;
-  }
-   
-  .link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-  }
-
-  .templink {
-    fill: none;
-    stroke: red;
-    stroke-width: 3px;
-  }
-
-  .ghostCircle.show{
-      display:block;
-  }
-
-  .ghostCircle, .activeDrag .ghostCircle{
-       display: none;
-  }
-</style>
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="dndTree.js"></script>
-<body>
-    <div id="tree-container"></div>
-</body> -->
-
-
 </html>
